@@ -1,0 +1,176 @@
+body{
+    background-image: url('images for ATLAproject/background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "MedievalSharp", cursive;
+    background-attachment: fixed;
+}
+
+.container{
+    background-image: url('images for ATLAproject/container\ background.png');
+    background-size: cover;
+    min-height: 750px;
+    max-height: none;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    contain: content;
+    overflow: visible;
+    transition: min-height 0.3s ease;
+}
+
+.container:hover{
+    box-shadow: 0px 0px 90px 50px black;
+    transform: scale(1.1);
+    transition: transform 0.3s, box-shadow 0.5s ;
+}
+
+.logo{
+    background-image: url('images for ATLAproject/logo\ 2.jpg');
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-left: 280px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px 1px azure;
+}
+
+.quote{
+    color: #5DA9E9;
+    font-family: "Marcellus", serif;
+    font-size: large;
+    font-weight: lighter;
+   
+}
+
+.quote-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.add-todo{   
+    display: flex;
+    justify-content: center;
+    
+}
+
+.input-field {
+    width: 475px;
+    height: 40px;
+    color: #B33F40;
+    font-family: "M", serif;
+    font-size: large;
+    font-weight:lighter;
+    padding-left: 30px;
+    border-radius: 6px;
+    border: none;
+}
+
+.input-field:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 3px 2px white;
+}
+
+.add-todo-button{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: url('images for ATLAproject/logo\ 3.jpg');
+    background-position: center;
+    background-size: contain;
+    margin-left: 18px;
+    margin-top: -15px;
+    border: none;
+}
+
+.add-todo-button:hover{
+    box-shadow: 0 0 50px white;
+}
+
+.display-div{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    contain: content;
+}
+
+.display-todo{
+    font-size: larger;
+    font-weight: bolder;
+    font-style: normal;
+    font-family: "MedievalSharp", cursive;
+    display: inline-block;
+    color: azure;
+    margin-left: 30px;
+}
+
+.clear-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 100px;
+    box-shadow: 0 0 2px 2px aliceblue;
+    
+}
+.clear-button:hover{
+     background-image: url('images for ATLAproject/logo 1.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+}
+
+.popup {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.popup-div {
+    background-color: #1a1a1a;
+    color: #f4d35e; /* warm gold */
+    border: 3px solid #c1440e; /* fire nation red */
+    padding: 20px;
+    max-width: 300px;
+    margin: 20% auto;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Papyrus', fantasy; /* ATLA vibe */
+    box-shadow: 0 0 20px rgba(255, 180, 0, 0.8);
+}
+
+.popup-button {
+    background-color: #c1440e;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.popup-button:hover {
+    background-color: #e85d04;
+}
