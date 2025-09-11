@@ -13,7 +13,7 @@ body{
     background-size: cover;
     min-height: 750px;
     max-height: none;
-    width: 650px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -31,17 +31,20 @@ body{
 
 .logo{
     background-image: url('images for ATLAproject/logo\ 2.jpg');
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-left: 280px;
-    margin-top: 20px;
     box-shadow: 0 0 20px 1px azure;
 }
+
+.logo-div{
+    margin-top: 20px;
+     display: flex;
+    justify-content: space-evenly;
+}
+
 
 .quote{
     color: #5DA9E9;
@@ -55,16 +58,17 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    width: 80%;
+    padding-left: 10px;
 }
 
 .add-todo{   
     display: flex;
     justify-content: center;
-    
 }
 
 .input-field {
-    width: 475px;
+    width: 60%;
     height: 40px;
     color: #B33F40;
     font-family: "M", serif;
@@ -98,11 +102,11 @@ body{
 }
 
 .display-div{
-    width: 600px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    contain: content;
+    
 }
 
 .display-todo{
@@ -113,14 +117,17 @@ body{
     display: inline-block;
     color: azure;
     margin-left: 30px;
+    width: 60%;
+    
+   
+    
 }
 
 .clear-button{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: none;
-    margin-left: 100px;
     box-shadow: 0 0 2px 2px aliceblue;
     
 }
@@ -139,7 +146,7 @@ body{
 }
 
 .popup {
-    display: none; /* hidden by default */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -151,14 +158,14 @@ body{
 
 .popup-div {
     background-color: #1a1a1a;
-    color: #f4d35e; /* warm gold */
-    border: 3px solid #c1440e; /* fire nation red */
+    color: #f4d35e; 
+    border: 3px solid #c1440e; 
     padding: 20px;
     max-width: 300px;
     margin: 20% auto;
     border-radius: 10px;
     text-align: center;
-    font-family: 'Papyrus', fantasy; /* ATLA vibe */
+    font-family: 'Papyrus', fantasy; 
     box-shadow: 0 0 20px rgba(255, 180, 0, 0.8);
 }
 
@@ -171,6 +178,7 @@ body{
     border-radius: 5px;
     margin-top: 10px;
 }
+
 .popup-button:hover {
     background-color: #e85d04;
 }
