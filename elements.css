@@ -13,6 +13,7 @@ body{
     background-size: cover;
     min-height: 750px;
     max-height: none;
+    min-width: 90%;
     width: 80%;
     display: flex;
     flex-direction: column;
