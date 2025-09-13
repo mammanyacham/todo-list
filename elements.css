@@ -1,5 +1,5 @@
 body{
-    background-image: url('images for ATLAproject/background.png');
+    background-color: aliceblue;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -9,59 +9,32 @@ body{
 }
 
 .container{
-    background-image: url('images for ATLAproject/container\ background.png');
+    background-color: teal;
     background-size: cover;
     min-height: 750px;
-    max-height: none;
-    min-width: 90%;
+    height: 80%;
+    min-width: 350px;
     width: 80%;
+    max-width: 750px;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     box-shadow: 0px 0px 20px black;
     contain: content;
-    overflow: visible;
     transition: min-height 0.3s ease;
 }
 
-.container:hover{
-    box-shadow: 0px 0px 90px 50px black;
-    transform: scale(1.1);
-    transition: transform 0.3s, box-shadow 0.5s ;
+
+.title{
+    
 }
 
-.logo{
-    background-image: url('images for ATLAproject/logo\ 2.jpg');
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 0 20px 1px azure;
-}
-
-.logo-div{
+.title-div{
     margin-top: 20px;
      display: flex;
     justify-content: space-evenly;
 }
 
-
-.quote{
-    color: #5DA9E9;
-    font-family: "Marcellus", serif;
-    font-size: large;
-    font-weight: lighter;
-   
-}
-
-.quote-div{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    width: 80%;
-    padding-left: 10px;
-}
 
 .add-todo{   
     display: flex;
@@ -87,15 +60,16 @@ body{
 }
 
 .add-todo-button{
-    height: 70px;
+    height: 40px;
     width: 70px;
-    border-radius: 50%;
-    background-image: url('images for ATLAproject/logo\ 3.jpg');
+    color: aqua;
+    background-color: #1a1a1a;
     background-position: center;
     background-size: contain;
     margin-left: 18px;
-    margin-top: -15px;
+    
     border: none;
+    box-shadow: 0 4px 2px 2px black;
 }
 
 .add-todo-button:hover{
@@ -125,15 +99,16 @@ body{
 }
 
 .clear-button{
-    width: 40px;
+    width: 70px;
     height: 40px;
-    border-radius: 50%;
     border: none;
-    box-shadow: 0 0 2px 2px aliceblue;
+    background-color: green;
+    box-shadow:2px 2px 2px black;
+    border-radius: 10pxi;
     
 }
 .clear-button:hover{
-     background-image: url('images for ATLAproject/logo 1.jpg');
+     background-color: gray;
     background-size: contain;
     background-position: center;
 }

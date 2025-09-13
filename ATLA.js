@@ -7,15 +7,15 @@ function showPopup()
     const randomNumber = (Math.random() * 3);
     if (randomNumber < 1) {
         document.querySelector('.js-popup-message').innerHTML = `You have completed five of your todos! 🎯
-     🔥 FLameo! Hotman 🔥
+     🔥 Fire!! 🔥
         `
     } else if (randomNumber < 2) {
           document.querySelector('.js-popup-message').innerHTML =  `You have completed five of your todos! 🎯
-        Even the cabbage man would be proud! 🥬
+            Great job!
         `
     } else {
           document.querySelector('.js-popup-message').innerHTML =  `You have completed five of your todos! 🎯
-        You’re as sharp as Sokka’s boomerang! 🪃
+         consistency is key!
         `
     }
  };
@@ -39,7 +39,7 @@ function renderTodoList() {
     const html = `
     <div class="todo-item js-todo-item">
     <p class="display-todo js-display-todo">${todo}</p>
-    <button class="clear-button js-clear-button"></button>
+    <button class="clear-button js-clear-button">DONE</button>
     </div>
     `;
     const displayTodo = document.querySelector('.js-display-div').innerHTML += html;
@@ -60,31 +60,7 @@ function renderTodoList() {
         })
     });
 
-    //this makes the clear-buttons background change when you hover on them
-    document.querySelectorAll('.js-clear-button').forEach((clearButton) => {
-        clearButton.addEventListener('mouseover',
-            function() {
-                const randomNumber = (Math.random() * 3);
-                if(randomNumber < 0.5){
-                     clearButton.style.backgroundImage = "url('images for ATLAproject/clear-button 3.jpg')";
-                } else if (randomNumber < 1) {
-                clearButton.style.backgroundImage = "url('images for ATLAproject/logo 1.jpg')";
-                } else if (randomNumber < 2) {
-                     clearButton.style.backgroundImage = "url('images for ATLAproject/clear-button 1.jpg')";
-                } else{
-                     clearButton.style.backgroundImage = "url('images for ATLAproject/clear-button 2.jpg')";
-                }
-                 clearButton.style.backgroundSize = "contain";
-                console.log(randomNumber)
-            });
-
-            clearButton.addEventListener('mouseout', function () {
-                clearButton.style.backgroundImage = "none";
-            });
-    });
-
-   
-};
+    };
 
 
 
