@@ -152,12 +152,13 @@ body{
     background-color: #e85d04;
 }
 
-@media (max-width:400px) {
+@media (max-width:480px) {
     .container {
-      width: 90%;
+      width: 97%;
     }
     
-    .quote{
-        font-size: small;
+    .add-todo{
+        margin-right: 5%;
+        margin-left: 5%;
     }
 }
