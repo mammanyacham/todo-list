@@ -13,7 +13,6 @@ body{
     background-size: cover;
     min-height: 750px;
     height: 80%;
-    min-width: 350px;
     width: 80%;
     max-width: 750px;
     display: flex;
@@ -22,11 +21,6 @@ body{
     box-shadow: 0px 0px 20px black;
     contain: content;
     transition: min-height 0.3s ease;
-}
-
-
-.title{
-    
 }
 
 .title-div{
@@ -67,13 +61,12 @@ body{
     background-position: center;
     background-size: contain;
     margin-left: 18px;
-    
     border: none;
     box-shadow: 0 4px 2px 2px black;
 }
 
 .add-todo-button:hover{
-    box-shadow: 0 0 50px white;
+    box-shadow: 0 0 8px white;
 }
 
 .display-div{
@@ -159,9 +152,9 @@ body{
     background-color: #e85d04;
 }
 
-@media (max-width:480px) {
+@media (max-width:400px) {
     .container {
-      width: 100%;
+      width: 90%;
     }
     
     .quote{
